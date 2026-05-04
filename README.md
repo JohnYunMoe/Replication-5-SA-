@@ -12,7 +12,7 @@ Dr. Sarah Nadi, NYUAD
 
 - **Paper Title**: Beyond Bug Fixes: An Empirical Investigation of Post-Merge Code Quality Issues in Agent-Generated Pull Requests
 - **Authors**: Shamse Tasnim Cynthia, Al Muttakin, Banani Roy (University of Saskatchewan)
-- **Replication Team**: [Your team members' names]
+- **Replication Team**: John Yun Moe, Zavier Shaikh
 - **Course**: CS-UH 3260 Software Analytics, NYUAD
 - **Brief Description**:
   - The original paper analyzes 1,210 merged agent-generated bug-fix pull requests from 206 Python repositories, using SonarQube differential analysis to measure code quality issues newly introduced after merging. It examines issue frequency, density, severity, and rule-level prevalence across five AI coding agents: OpenAI Codex, Copilot, Devin, Cursor, and Claude Code.
