@@ -4,27 +4,33 @@ Replication Study Guidelines<br/>
 Dr. Sarah Nadi, NYUAD
 </p>
 
-# Replication Repository README Template -- CS-UH-3260 Software Analytics
-
+# Replication Study: Beyond Bug Fixes — Agent-Generated Pull Request Code Quality
 
 ## Overview
 
-This repo provides a template and and guidelines for creating a README file for your replication study repository. The README serves as the primary documentation for your repository and helps evaluators understand your work, navigate your repository structure, and reproduce your replication. You can create a repo based on this template and modify the README and content as needed.
-
-
-## README Structure Template
-
-Your repository README should include the following sections:
-
 ### 1. Project Title and Overview
 
-- **Paper Title**: [Full title of the replicated paper]
-- **Authors**: [Original paper authors]
+- **Paper Title**: Beyond Bug Fixes: An Empirical Investigation of Post-Merge Code Quality Issues in Agent-Generated Pull Requests
+- **Authors**: Shamse Tasnim Cynthia, Al Muttakin, Banani Roy (University of Saskatchewan)
 - **Replication Team**: [Your team members' names]
 - **Course**: CS-UH 3260 Software Analytics, NYUAD
-- **Brief Description**: 
-  - 2-3 sentences summarizing what the original paper is about
-  - 2-3 sentences summarizing what this replication study does
+- **Brief Description**:
+  - The original paper analyzes 1,210 merged agent-generated bug-fix pull requests from 206 Python repositories, using SonarQube differential analysis to measure code quality issues newly introduced after merging. It examines issue frequency, density, severity, and rule-level prevalence across five AI coding agents: OpenAI Codex, Copilot, Devin, Cursor, and Claude Code.
+  - This replication study reproduces the paper's two research questions using the provided dataset and scripts. Task 1 inspects and documents the replication package files and manually validates a sample of pull requests. Task 2 reruns the full SonarQube analysis pipeline to reproduce all reported tables and figures.
+
+### 2. Scope of Replication
+
+This replication covers two tasks:
+
+**Task 1 — Data Inspection**
+- Inspect all files in the replication package and document what each file contains and how it contributes to the study.
+- Identify which files originate from the AIDev dataset and which were created by the paper's authors.
+- Randomly select 3 pull requests from `python_fix_prs.csv`, open their GitHub pages, and verify whether each is a genuine bug-fix PR with a correct recorded author.
+
+**Task 2 — Full Paper Replication**
+- Rerun all provided scripts to replicate the results for RQ1 (issue frequency and density across agents) and RQ2 (severity profiles and most violated rules).
+- Reproduce Table 2, Table 3, Table 4, and Figure 1 from the paper.
+- Commit all intermediate outputs (CSV and JSON files) generated during the replication pipeline to this repository.
 
 ### 2. Repository Structure
 
